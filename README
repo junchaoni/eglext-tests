@@ -1,3 +1,5 @@
+单独编译测试模块：
+g++ src/native_x11.c src/test_shared_image.cpp src/testutil.cpp src/util.cpp  -o demo -g -lGLU -lGL -lglut -ldl -lrt -lm -lX11 -lpthread -lX11 -lGLESv2 -lEGL `pkg-config --libs xcomposite` -I /usr/include/SOIL -I /home/ubuntu/eglext-tests -lSOIL -Wno-narrowing
 EGL extension tests
 ===================
 Copyright (C) 2010 Nokia
